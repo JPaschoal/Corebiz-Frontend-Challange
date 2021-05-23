@@ -1,7 +1,14 @@
 import React from 'react';
+import Header from '../components/Header';
 
-export default function Home() {
+import '../styles/components/header.css'
+
+function Home() {
   return (
-    <div></div>
+    <div className='homeContainer'>
+      <Header />
+    </div>
   );
 }
+
+export default Home;
