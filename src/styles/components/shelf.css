@@ -1,0 +1,68 @@
+.shelfWrapper {
+  max-width: 1248px;
+  margin: 0 auto;
+}
+
+.shelfTitle {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Nunito, sans-serif;
+  margin: 26px 0;
+}
+
+.imageWrapper {
+  display: flex;
+}
+
+.productImage {
+  margin: 0 auto;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.productName,
+.listPrice {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Nunito, sans-serif;
+  line-height: 16px;
+  text-align: center;
+  color: #7A7A7A;
+}
+
+.starsWrapper {
+  margin: 10px 0  7px;
+}
+
+.listPrice {
+  height: 16px;
+}
+
+.price {
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.installments {
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  color: #7A7A7A;
+}
+
+.productLink {
+  text-decoration: none;
+}

@@ -8,6 +8,7 @@ import Banner2 from '../images/Banner.svg'
 import Banner3 from '../images/Banner.svg'
 
 import '../styles/components/header.css'
+import Shelf from '../components/Shelf';
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
           <img src={Banner3} alt='' />
         </div>
       </Carousel>
+      <Shelf />
     </div>
   );
 }
