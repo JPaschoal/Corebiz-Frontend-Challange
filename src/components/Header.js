@@ -14,7 +14,7 @@ function Header() {
           alt='logo' 
         />
       </div>
-      <div>
+      <div className='searchContainer'>
         <span className='searchWrapper'>
           <input 
             placeholder='O que está procurando?'
