@@ -78,3 +78,13 @@
 .buyButtonWrapper {
   justify-content: center;
 }
+
+@media(max-width: 1024px) {
+  .shelfTitle {
+    padding: 0 16px;
+  }
+
+  .buyButtonWrapper {
+    display: flex !important;
+  }
+}

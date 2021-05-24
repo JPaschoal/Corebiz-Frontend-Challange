@@ -1,0 +1,12 @@
+.caroselMobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .caroselMobile {
+    display: block;
+  }
+  .caroselDesk {
+    display: none;
+  }
+}

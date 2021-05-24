@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 
 import '../styles/components/cartModal.css'
 
@@ -39,7 +39,7 @@ function CartModal({ setOpen }) {
             )
           }
           <div className='total'>
-            Total: R$ {(getPrice()/100)}
+            Total: R$ {cart.length > 0 ? (getPrice()/100) : '0.00'}
           </div>
         </div>
       </div>

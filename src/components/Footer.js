@@ -23,7 +23,7 @@ function Footer() {
           <a href='/'>
             <img src={Contact} alt='' />
           </a>
-          <a href='https://www.corebiz.ag' target='_blank' rel="noreferrer" >
+          <a className='logoFooter' href='https://www.corebiz.ag' target='_blank' rel="noreferrer" >
             <img src={logosFooter} alt='' />
           </a>
         </div>

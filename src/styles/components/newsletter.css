@@ -116,3 +116,24 @@
   border: none;
   border-radius: 5px;
 }
+
+@media(max-width: 1024px) {
+  .newsletterTitle {
+    text-align: center;
+  }
+
+  .newsletterForm {
+    flex-direction: column;
+  }
+  .newsletter {
+    height: auto;
+  }
+
+  .inputWrapper {
+    margin-bottom: 22px;
+  }
+
+  .buttonWrapper {
+    margin-bottom: 16px;
+  }
+}
