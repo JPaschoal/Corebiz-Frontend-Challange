@@ -53,7 +53,7 @@ function Shelf() {
         <div>Loading...</div>
       ) : (
         <>
-          <div className='shelfTitle'>Mais Vendidos</div>
+          <h1 className='shelfTitle'>Mais Vendidos</h1>
           <Carousel responsive={responsive}>
           {products.map((product, index) => {
             return(

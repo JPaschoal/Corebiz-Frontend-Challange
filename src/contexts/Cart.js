@@ -1,9 +1,11 @@
 import React, { createContext, useState } from 'react';
+import Cookies from 'js-cookie';
 
 export const CartContext = createContext([])
 
 export const CartProvider = ({ children }) => {
-  const[cart, setCart] = useState([])
+  const [cart, setCart] = useState([])
+  const [open, setOpen] = useState(false)
 
   const add = (item) => {
     const exist = cart.find(cartItem => cartItem.productId === item.productId)
@@ -16,10 +18,17 @@ export const CartProvider = ({ children }) => {
     else {
       setCart([...cart, {...item, qty: 1}])
     }
+    Cookies.set('cart', cart)
   }
   
   return(
-    <CartContext.Provider value={ { itemsCart: [cart, setCart], addToCart: add } }>
+    <CartContext.Provider 
+      value={{ 
+        itemsCart: [cart, setCart], 
+        addToCart: add,
+        openCart: [open, setOpen]
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

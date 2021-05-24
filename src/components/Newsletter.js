@@ -52,7 +52,7 @@ function Newsletter() {
     <div className='newsletter'>
       { !sended ? (
         <div className='newsletterContent'>
-          <div className='newsletterTitle'>Participe de nossas news com promoções e novidades!</div>
+          <h2 className='newsletterTitle'>Participe de nossas news com promoções e novidades!</h2>
           <form onSubmit={handleSubmit} className='newsletterForm'>
             <div className='inputWrapper'>
               <input
@@ -81,8 +81,8 @@ function Newsletter() {
         </div>
       ) : (
         <div className='successMessage'>
-          <div className='successTitle'>Seu e-mail foicadastrado com sucesso!</div>
-          <div className='successText'>A partir de agora você receberá as novidade e ofertas exclusivas.</div>
+          <h2 className='successTitle'>Seu e-mail foicadastrado com sucesso!</h2>
+          <p className='successText'>A partir de agora você receberá as novidade e ofertas exclusivas.</p>
           <button onClick={reset} className='successBtn'>
             Cadastrar novo e-email
           </button>
