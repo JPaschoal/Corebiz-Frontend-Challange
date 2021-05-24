@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
 
 export const CartContext = createContext([])
@@ -18,8 +18,25 @@ export const CartProvider = ({ children }) => {
     else {
       setCart([...cart, {...item, qty: 1}])
     }
-    Cookies.set('cart', cart)
   }
+
+  useEffect(() => {
+    const cartCookie = Cookies.get('cart')
+    
+    if(cartCookie) {
+      setCart(JSON.parse(cartCookie))
+      console.log(cart)
+    }
+    
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  useEffect(() => {
+    if(cart.length > 0) {
+      Cookies.set('cart', [])
+      Cookies.set('cart', JSON.stringify(cart))
+    }
+  }, [cart])
   
   return(
     <CartContext.Provider 
