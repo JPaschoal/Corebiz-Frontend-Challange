@@ -1,0 +1,45 @@
+.footer {
+  background-color: #000000;
+  border-bottom: 10px solid #C0C0C0;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: 'row';
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1248px;
+  height: 213px;
+  margin: 0 auto;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+}
+
+.infoTitle {
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.line {
+  border-bottom: 5px solid #ffff;
+  width: 45px;
+  margin: 16px 0 21px;
+}
+
+.address, .city, .email, .phoneNumber {
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 12px;
+  color: #FFFFFF;
+  margin-bottom: 12px;  
+}

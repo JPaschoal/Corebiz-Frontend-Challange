@@ -9,6 +9,7 @@ import Banner3 from '../images/Banner.svg'
 
 import '../styles/components/header.css'
 import Shelf from '../components/Shelf';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
         </div>
       </Carousel>
       <Shelf />
+      <Footer />
     </div>
   );
 }

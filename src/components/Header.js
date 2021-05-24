@@ -7,7 +7,7 @@ import Cart from '../images/shopping-cart.svg'
 
 function Header() {
   return (
-    <div className='headerContainer'>
+    <header className='headerContainer'>
       <div className='logoContainer'>
         <img 
           src={Logo} 
@@ -47,7 +47,7 @@ function Header() {
           </div>
         </button>
       </div>
-    </div>
+    </header>
   );
 }
 
