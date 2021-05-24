@@ -1,0 +1,14 @@
+.addCartBtn {
+  background: #000000;
+  border-radius: 5px; 
+  border: none;
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding: 8px 28px;
+  margin-top: 16px;
+  cursor: pointer;
+}

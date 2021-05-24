@@ -66,3 +66,15 @@
 .productLink {
   text-decoration: none;
 }
+
+.notHover {
+  display: none;
+}
+
+.buyBtn {
+  height: 55px;
+}
+
+.buyButtonWrapper {
+  justify-content: center;
+}
