@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Carousel from 'react-multi-carousel';
-import productApi from '../services/productApi';
+import api from '../services/api';
 import ReactStars from "react-rating-stars-component";
 
 import 'react-multi-carousel/lib/styles.css';
@@ -27,7 +27,7 @@ function Shelf() {
   const [products, setProducts] = useState()
 
   useEffect(() => {
-    productApi.get('products')
+    api.get('products')
     .then(response => {
       setProducts(response.data)
       setLoading(false)
